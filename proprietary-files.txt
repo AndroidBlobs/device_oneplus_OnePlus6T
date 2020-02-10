@@ -118,14 +118,22 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
 # Audio-Hardware
+vendor/lib/hw/audio.bluetooth.default.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sdm845.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
+vendor/lib64/hw/audio.bluetooth.default.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.sdm845.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
@@ -138,8 +146,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/audio.bluetooth.default.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib/libbluetooth_audio_session.so
@@ -150,8 +156,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/audio.bluetooth.default.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/libbluetooth_audio_session.so
@@ -883,10 +887,6 @@ vendor/lib64/libsdm-diag.so
 -vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libtinyxml2_1.so
 
-# HotwordEnrollment
--priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
--priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
-
 # IFAA
 vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service
 vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc
@@ -1212,10 +1212,14 @@ vendor/overlay/oneplus_basiccolor_black_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_black_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_black_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_black_packageinstaller/black_packageinstaller.apk
+vendor/overlay/oneplus_basiccolor_black_permissioncontroller/black_permissioncontroller.apk
+vendor/overlay/oneplus_basiccolor_black_permissionutil/black_permissionutil.apk
 vendor/overlay/oneplus_basiccolor_black_phone/black_phone.apk
 vendor/overlay/oneplus_basiccolor_black_settings/black_settings.apk
 vendor/overlay/oneplus_basiccolor_black_settings_intelligence/black_settings_intelligence.apk
 vendor/overlay/oneplus_basiccolor_black_simcontacts/black_simcontacts.apk
+vendor/overlay/oneplus_basiccolor_black_simplemanager/black_simplemanager.apk
 vendor/overlay/oneplus_basiccolor_black_telecom/black_telecom.apk
 vendor/overlay/oneplus_basiccolor_black_wifiapsettings/black_wifiapsettings.apk
 vendor/overlay/oneplus_basiccolor_white_aod/white_aod.apk
@@ -1238,31 +1242,21 @@ vendor/overlay/oneplus_basiccolor_white_OPSafe/com.oneplus.security.apk
 vendor/overlay/oneplus_basiccolor_white_OPScreenRecord/com.oneplus.screenrecord.apk
 vendor/overlay/oneplus_basiccolor_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
 vendor/overlay/oneplus_basiccolor_white_OPWeather/net.oneplus.weather.apk
+vendor/overlay/oneplus_basiccolor_white_packageinstaller/white_packageinstaller.apk
+vendor/overlay/oneplus_basiccolor_white_permissioncontroller/white_permissioncontroller.apk
+vendor/overlay/oneplus_basiccolor_white_permissionutil/white_permissionutil.apk
 vendor/overlay/oneplus_basiccolor_white_phone/white_phone.apk
 vendor/overlay/oneplus_basiccolor_white_settings/white_settings.apk
 vendor/overlay/oneplus_basiccolor_white_settings_intelligence/white_settings_intelligence.apk
 vendor/overlay/oneplus_basiccolor_white_simcontacts/white_simcontacts.apk
+vendor/overlay/oneplus_basiccolor_white_simplemanager/white_simplemanager.apk
 vendor/overlay/oneplus_basiccolor_white_telecom/white_telecom.apk
 vendor/overlay/oneplus_basiccolor_white_wifiapsettings/white_wifiapsettings.apk
-vendor/overlay/oneplus_black_OneplusAccount/com.oneplus.account.apk
-vendor/overlay/oneplus_black_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_black_OPFilemanager/com.oneplus.filemanager.apk
-vendor/overlay/oneplus_black_OPNote/com.oneplus.note.apk
-vendor/overlay/oneplus_black_OPScreenRecord/com.oneplus.screenrecord.apk
-vendor/overlay/oneplus_black_OPSoundRecorder/com.oneplus.soundrecorder.apk
-vendor/overlay/oneplus_black_OPWeather/net.oneplus.weather.apk
 vendor/overlay/oneplus_shape_circle/OnePlusIconShapeCircleOverlay.apk
 vendor/overlay/oneplus_shape_roundedrect/OnePlusIconShapeRoundedRectOverlay.apk
 vendor/overlay/oneplus_shape_square/OnePlusIconShapeSquareOverlay.apk
 vendor/overlay/oneplus_shape_squircle/OnePlusIconShapeSquircleOverlay.apk
 vendor/overlay/oneplus_shape_teardrop/OnePlusIconShapeTeardropOverlay.apk
-vendor/overlay/oneplus_white_OneplusAccount/com.oneplus.account.apk
-vendor/overlay/oneplus_white_OPCalendar/com.oneplus.calendar.apk
-vendor/overlay/oneplus_white_OPFilemanager/com.oneplus.filemanager.apk
-vendor/overlay/oneplus_white_OPNote/com.oneplus.note.apk
-vendor/overlay/oneplus_white_OPScreenRecord/com.oneplus.screenrecord.apk
-vendor/overlay/oneplus_white_OPSoundRecorder/com.oneplus.soundrecorder.apk
-vendor/overlay/oneplus_white_OPWeather/net.oneplus.weather.apk
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
@@ -1796,14 +1790,18 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.sdm845.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.sdm845.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.sdm845.so
-vendor/lib64/hw/thermal.sdm845.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2001,11 +1999,6 @@ vendor/bin/wigighalsvc
 vendor/bin/wigig_wiburn
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
--vendor/etc/apps/in/amusic.apk
--vendor/etc/apps/in/atv.apk
--vendor/etc/apps/in/kindle.apk
--vendor/etc/apps/in/mdip.apk
--vendor/etc/apps/in/mshop.apk
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/configstore/wigig.xml
 vendor/etc/gpfspath_oem_config.xml
