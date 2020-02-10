@@ -4,6 +4,8 @@
 -framework/WfdCommon.jar
 -lib/libantradio.so
 -lib64/libantradio.so
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
+-priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk
 -priv-app/WfdService/WfdService.apk
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 -product/app/datastatusnotification/datastatusnotification.apk
