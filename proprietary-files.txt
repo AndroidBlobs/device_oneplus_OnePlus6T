@@ -51,6 +51,9 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Alarm
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
+-vendor/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.odex
+-vendor/app/PowerOffAlarm/oat/arm64/PowerOffAlarm.vdex
+-vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -717,8 +720,6 @@ vendor/firmware/a630_zap.elf
 vendor/firmware/a630_zap.mdt
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
@@ -840,14 +841,12 @@ vendor/lib/libbccQTI.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libCB.so
-vendor/lib/libEGL_adreno.so
 vendor/lib/libgsl.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libpvr.so
-vendor/lib/libq3dtools_adreno.so
 vendor/lib/libqseed3.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
@@ -869,14 +868,12 @@ vendor/lib64/libbccQTI.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libCB.so
-vendor/lib64/libEGL_adreno.so
 vendor/lib64/libgsl.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libpvr.so
-vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/librs_adreno.so
@@ -1102,7 +1099,6 @@ vendor/lib64/libplatformconfig.so
 vendor/lib64/libstagefrighthw.so
 
 # NFC
--app/NxpNfcNci/lib/arm64/libnxpnfc_nci_jni.so
 -app/NxpNfcNci/NxpNfcNci.apk
 -app/NxpSecureElement/NxpSecureElement.apk
 etc/nfcee_access.xml
@@ -1897,7 +1893,6 @@ lib64/libwfduibcsink.so
 lib64/libwfduibcsinkinterface.so
 lib64/libwfduibcsrc.so
 lib64/libwfduibcsrcinterface.so
--priv-app/WfdService/lib/arm64/libwfdnative.so
 -priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
@@ -1967,10 +1962,8 @@ vendor/app/TimeService/oat/arm64/TimeService.odex
 vendor/app/TimeService/oat/arm64/TimeService.vdex
 vendor/bin/adpl
 vendor/bin/athdiag
-vendor/bin/bc
 vendor/bin/ccid_daemon
 vendor/bin/cplay
-vendor/bin/devmem
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
 vendor/bin/diag_klog
@@ -1980,9 +1973,7 @@ vendor/bin/e_loop
 vendor/bin/fmconfig
 vendor/bin/fmfactorytest
 vendor/bin/fmfactorytestserver
-vendor/bin/fsync
 vendor/bin/ftmtest
-vendor/bin/getconf
 vendor/bin/hal_proxy_daemon
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
@@ -1991,21 +1982,11 @@ vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/bin/hw/vendor.qti.hardware.cryptfshw@1.0-service-qti
-vendor/bin/i2cdetect
-vendor/bin/i2cdump
-vendor/bin/i2cget
-vendor/bin/i2cset
-vendor/bin/iconv
-vendor/bin/install
 vendor/bin/loadalgo
 vendor/bin/lowi_test
 vendor/bin/mdm_helper
 vendor/bin/mdm_helper_proxy
 vendor/bin/myftm
-vendor/bin/nc
-vendor/bin/netcat
-vendor/bin/nproc
-vendor/bin/nsenter
 vendor/bin/PktRspTest
 vendor/bin/ppd
 vendor/bin/qseecom_sample_client
@@ -2015,11 +1996,7 @@ vendor/bin/sigma_dut
 vendor/bin/spectraltool
 vendor/bin/StoreKeybox
 vendor/bin/test_diag
-vendor/bin/unlink
-vendor/bin/unshare
-vendor/bin/uuidgen
 vendor/bin/vppservice
-vendor/bin/watch
 vendor/bin/wdsdaemon
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
