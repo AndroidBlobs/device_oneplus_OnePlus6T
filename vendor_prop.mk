@@ -76,7 +76,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.bluetooth.wipower=false \
     ro.vendor.display.cabl=2 \
     ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.rom_versioncode=9 \
     ro.vendor.use_data_netmgrd=true \
     sys.vendor.shutdown.waittime=500 \
     vendor.audio.adm.buffering.ms=2 \

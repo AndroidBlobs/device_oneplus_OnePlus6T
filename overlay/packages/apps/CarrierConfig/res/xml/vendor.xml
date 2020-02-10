@@ -179,31 +179,6 @@
         </string-array>
         <string name="carrier_name_string">O2 - UK</string>
         <string name="vendor_carrier_eons_short">O2</string>
-        <string name="vvm_destination_number_string">9017</string>
-        <int name="vvm_port_number_int" value="2700" />
-        <string name="vvm_type_string">vvm_type_omtp</string>
-        <boolean name="oneplus_vvm_default_enabled_bool" value="false" />
-        <string name="carrier_vvm_package_name_string">com.o2.android.vvm</string>
-        <boolean name="vvm_prefetch_bool" value="true" />
-        <boolean name="vvm_cellular_data_required_bool" value="true" />
-    </carrier_config>
-    <carrier_config gid1="99FFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
-    </carrier_config>
-    <carrier_config gid1="61FFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
-    </carrier_config>
-    <carrier_config gid1="67FFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
-    </carrier_config>
-    <carrier_config gid1="85FFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
-    </carrier_config>
-    <carrier_config gid1="0AFFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
-    </carrier_config>
-    <carrier_config gid1="508FFFFFFFF" mcc="234" mnc="10">
-        <string name="vvm_type_string">vvm_type_disable</string>
     </carrier_config>
     <carrier_config mcc="234" mnc="11" />
     <carrier_config mcc="234" mnc="15">
